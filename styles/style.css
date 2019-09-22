@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{ background-color: skyblue;}
+
+.main_wrapper{
+	width:1000px;
+	height:auto;
+	margin: auto;
+}
+
+.header_wrapper	{
+	width: 1000px;
+	height:100px;
+	margin: auto;
+}
+
+.header_wrapper img:nth-child(1){
+	float:left;
+	width: 250px;
+    height: 90px;
+    /* margin-left: 50px; */
+}
+.header_wrapper img:nth-child(2){
+	float:right;
+	width: 750px;
+    height: 90px;
+}
+.menubar{
+	width: 1000px;
+	height: 50px;
+	background: gray;
+	color: white;
+	margin-top:-10px;
+}
+#menu{
+	padding:0;
+	margin: 0;
+	line-height: 40px;
+	float: left;
+}
+#menu li {
+	list-style: none;
+	display: inline;
+}
+#menu a{
+	text-decoration: none;
+	color:white;
+	padding: 8px;
+	margin: 5px;
+	font-size: 18px;
+	font-family: 'Chilanka', cursive;
+}
+#form{
+	float:right;
+	padding-right: 8px;
+	line-height: 40px;
+}
+#menu a:hover{
+	color:orange;
+	font-weight: bo²lder;
+	text-decoration: underline;
+}
+.content_wrapper{
+	width:1000px;
+	margin: auto;
+	background: pink;
+}
+
+#content_area{
+	width: 800px;
+	float:right;
+	background: pink;
+}
+
+#sidebar{
+	width: 200px;
+	float:left;
+	background: black;
+}
+.sidebar_title{
+	background: white;
+	color: black;
+	font-size: 22px;
+	font-family: arial;
+	padding:10px;
+	text-align: center;
+
+}
+.cats{
+	text-align: center;
+}
+.cats li{
+	list-style: none;
+	display:block;
+	margin: 5px;
+}
+.cats a{
+	color: white;
+	padding: 8px;
+	margin: 5px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Chilanka', cursive;
+}
+.cats a:hover{
+	color: orange;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#footer{
+	width: 1000px;
+	height: 100px;
+	clear: both;
+	background: gray;
+}
+
+#footer h2{
+	text-align: center;
+	padding:30px;
+}

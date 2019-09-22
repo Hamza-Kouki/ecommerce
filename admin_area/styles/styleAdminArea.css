@@ -1,0 +1,45 @@
+body{ background-color: skyblue;}
+
+#insert_product_form table{
+    /* text-align: center; */
+	width: 750px;
+	background-color: orange;
+	/* border: 2px double; */
+    /* margin-inline-start: auto;
+    margin-inline-end: auto; */
+}
+/* ---------------------------TEXTAREA------------------------ */
+
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
+
+body {
+  margin: 0;
+  background-color: azure;
+}
+.editor {
+  background: white;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+.button-list {
+  padding: 0 10px;
+  display: flex;
+}
+.button {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 2px;
+  background: #fefefe;
+}
+select {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 8px;
+}
+textarea {
+	max-width: 715px;
+	max-height: 75px;
+	overflow: auto;
+}
