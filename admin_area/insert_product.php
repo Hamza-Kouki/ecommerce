@@ -2,6 +2,7 @@
 <?php include("../functions/functions.php")?>
 <html lang="en">
 <head>
+    <meta http-equiv="Cache-control" content="no-cache">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -30,7 +31,7 @@
            <tr>
               <td align="right"><b>Product Title:</b></td>
                <td>
-                   <input type="text" name="product_title">
+                   <input type="text" name="product_title" size="50">
                </td>
            </tr>
           <tr>
@@ -57,7 +58,7 @@
           </tr>
           <tr>
              <td align="right"><b>Product Price:</b></td>
-              <td><input type="text" name="product_price"></td>
+              <td><input type="text" name="product_price" size="50"></td>
           </tr>
           <tr>
              <td align="right"><b>Product Description:</b></td>
@@ -108,7 +109,7 @@
           </tr>
           <tr>
              <td align="right"><b>Product Keywords:</b></td>
-              <td><input type="text" name="product_keywords"></td>
+              <td><input type="text" name="product_keywords" size="50"></td>
           </tr>
           <!------------------------------------------------>
           <tr align="center">
@@ -125,3 +126,6 @@
 <!-- <script src="../js/admin_area_js/script-jquery.js"></script> -->
 <script src="../js/admin_area_js/script-js.js"></script>
 </html>
+<?php  //setData();?>
+<?php  setDataToProductTable();?>
+
