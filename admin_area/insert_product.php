@@ -94,5 +94,6 @@
 </html>
 <?php  //setData();?>
 <?php  setDataToProductTable();?>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> -->
+<script src="../functions/sweetalert2.js"></script>
 <script src="../functions/functions.js"></script>
