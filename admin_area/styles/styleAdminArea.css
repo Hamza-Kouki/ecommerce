@@ -1,21 +1,22 @@
-body{ background-color: skyblue;}
-
-#insert_product_form table{
-    /* text-align: center; */
+body{ 
+  margin: 0;
+  background-color: azure;
+}
+.Forms{
+	padding-right:90px;
+}
+.Forms form table{
 	width: 750px;
-	background-color: orange;
-	/* border: 2px double; */
-    /* margin-inline-start: auto;
-    margin-inline-end: auto; */
+  background-color: orange;
+  
+}
+#insert_product_form{
+	padding-left:px;
 }
 /* ---------------------------TEXTAREA------------------------ */
 
 @import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
 
-body {
-  margin: 0;
-  background-color: azure;
-}
 .editor {
   background: white;
   box-sizing: border-box;
@@ -42,4 +43,48 @@ textarea {
 	max-width: 715px;
 	max-height: 75px;
 	overflow: auto;
+}
+/*--------------------------------------------------------*/
+.allalerts{
+  width: 465px;
+  float:left;
+  border-style: solid;
+  border-color: azure;
+}
+.alert {
+  padding: 20px;
+  background-color: #ff9800;
+  color: white;
+  margin-bottom : 5px;
+  display: none;
+  /* animation: hide 10s forwards; */
+ 
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*******************************************************/
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }

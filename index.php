@@ -27,8 +27,7 @@
                   <li><a href="#">Shopping Cart</a></li>
                   <li><a href="#">Contact Us</a></li>
               </ul>
-              <div id="form">
-                  <  action="get" action="results.php" enctype= multipart/form-data>
+              <div id="form" action="get" action="results.php" enctype= multipart/form-data>
                   <input type="text" name="user_query" placeholder="Search a Product"/>
                   <input type="submit" name="search" value="search"/>
                   </form>
