@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include("../functions/functions.php")?>
+<?php include("functions/admin_area_functions.php")?>
 <html lang="en">
 <head>
     <meta http-equiv="Cache-control" content="no-cache">
@@ -15,17 +15,12 @@
       crossorigin="anonymous"
     />
     <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-    <!-- <script src="../functions/tinymce.min.js"></script> -->
     <script>
             tinymce.init({selector:'textarea'});
     </script>
 </head>
 <body>
 <div class="allalerts">
-<!-- <div class="alert">
-  <span class="closebtn">&times;</span> 
-  "the field <strong><u>Product Title</u></strong> in must not be empty.
-</div> -->
 </div>
     <div class="Forms">
     <form name="insert_product_form" onsubmit="return validateForm()" action="insert_product.php" method="post" enctype="multipart/form-data">
@@ -96,4 +91,4 @@
 <?php  setDataToProductTable();?>
 <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> -->
 <script src="../functions/sweetalert2.js"></script>
-<script src="../functions/functions.js"></script>
+<script src="functions/admin_area_functions.js"></script>
