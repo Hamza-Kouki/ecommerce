@@ -151,8 +151,15 @@ body{ background-color: skyblue;
 	padding: 10px;
 	border:2px solid #F44336;
 }
-
-
+#single_product_desc{
+	float:left;
+	margin-left:20px;
+	padding: 10px;
+	border:2px solid #F44336;
+	height : 250px;
+	width : 450px;
+	background-color :#fbfbfb;
+}
 #single_product h3{
 	font-family: 'Mansalva', cursive;
 }
