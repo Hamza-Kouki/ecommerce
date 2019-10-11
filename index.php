@@ -58,8 +58,8 @@
                     </div>
                     <div id="products_box">
                         <?php getPro();?>
-                        <?php getCatPro(); ?>
-                        <?php getBrandPro(); ?>
+                        <?php getCatPro('index.php'); ?>
+                        <?php getBrandPro('index.php'); ?>
                     </div>
                 </div>
             </div>
