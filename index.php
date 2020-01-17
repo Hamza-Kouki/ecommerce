@@ -21,19 +21,20 @@
          <!-- header /-->
          <!-- menubar -->
             <div class="menubar">
-              <ul id="menu">
-                  <li><a href="index.php">Home</a></li>
-                  <li><a href="all_products.php">ALL Products</a></li>
-                  <li><a href="customer/my_account.php">My Account</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="cart.php">Shopping Cart</a></li>
-                  <li><a href="#">Contact Us</a></li>
-              </ul>
-              <div id="form" action="get" action="results.php" enctype= multipart/form-data>
-                  <input type="text" name="user_query" placeholder="Search a Product"/>
-                  <input type="submit" name="search" value="search"/>
-                  </form>
-              </div>
+                <ul id="menu">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="all_products.php">ALL Products</a></li>
+                    <li><a href="customer/my_account.php">My Account</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="cart.php">Shopping Cart</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div id="form">
+                        <form  method="get" action="results.php" enctype= multipart/form-data>
+                            <input type="text" name="user_query" placeholder="Search a Product"/>
+                            <input type="submit" name="search" value="search"/>
+                        </form>
+                </div>
             </div>
          <!-- menubar /-->
          <!-- content_wrapper -->
