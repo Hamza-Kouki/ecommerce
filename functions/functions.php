@@ -42,7 +42,7 @@ function getPro(){
         <div id='single_product'>
             <h3>$pro_title</h3>
             <img src='admin_area/product_images/$pro_image' width='180' height='180' />
-            <p><b>$ $pro_price</b></p>
+            <p><b>Price: $ $pro_price</b></p>
             <a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
             
             <a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>
@@ -63,7 +63,7 @@ function getPro_details(){
                 $product_id = $_GET['pro_id'];
                 $get_pro =  "select *  from products where product_id='$product_id'";
         
-                $run_pro = mysqli_query($con, $get_pro);
+            $run_pro = mysqli_query($con, $get_pro);
             while($row_pro = mysqli_fetch_array($run_pro)){
 
                 $pro_id = $row_pro['product_id'];
@@ -75,7 +75,7 @@ function getPro_details(){
                     <div id='single_product'>
                         <h3>$pro_title</h3>
                         <img src='admin_area/product_images/$pro_image' width='180' height='180' />
-                        <p><b>$ $pro_price</b></p>
+                        <p><b>Price: $ $pro_price</b></p>
                         <a href='index.php' style='float:left;'>Go Back</a>
                         
                         <a href='index.php><button style='float:right'>Add to Cart</button></a>
@@ -109,7 +109,7 @@ function getCatPro($page){
             <div id='single_product'>
                 <h3>$pro_title</h3>
                 <img src='admin_area/product_images/$pro_image' width='180' height='180' />
-                <p><b>$ $pro_price</b></p>
+                <p><b>Price: $ $pro_price</b></p>
                 <a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
                 
                 <a href='$page?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>
@@ -150,7 +150,7 @@ function getBrandPro($page){
             <div id='single_product'>
                 <h3>$pro_title</h3>
                 <img src='admin_area/product_images/$pro_image' width='180' height='180' />
-                <p><b>$ $pro_price</b></p>
+                <p><b>Price: $ $pro_price</b></p>
                 <a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
                 
                 <a href='$page?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>
@@ -190,7 +190,7 @@ function getPro_all_products(){
         <div id='single_product'>
             <h3>$pro_title</h3>
             <img src='admin_area/product_images/$pro_image' width='180' height='180' />
-            <p><b>$ $pro_price</b></p>
+            <p><b>Price: $ $pro_price</b></p>
             <a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
             
             <a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>
@@ -222,7 +222,7 @@ function getPro_product_keywords($page){
             <div id='single_product'>
                 <h3>$pro_title</h3>
                 <img src='admin_area/product_images/$pro_image' width='180' height='180' />
-                <p><b>$ $pro_price</b></p>
+                <p><b>Price: $ $pro_price</b></p>
                 <a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
                 
                 <a href='$page?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>
