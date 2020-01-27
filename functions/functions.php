@@ -54,39 +54,34 @@ function getPro(){
 // }
 //================================================================================================================
 function getPro_details(){
-        global $con ;
-        if (mysqli_connect_errno()) {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        }
-        else {
-            if(isset($_GET['pro_id'])){
-                $product_id = $_GET['pro_id'];
-                $get_pro =  "select *  from products where product_id='$product_id'";
-        
-            $run_pro = mysqli_query($con, $get_pro);
-            while($row_pro = mysqli_fetch_array($run_pro)){
+    global $con ;
+        if(isset($_GET['pro_id'])){
+            $product_id = $_GET['pro_id'];
+            $get_pro =  "select *  from products where product_id='$product_id'";
+    
+        $run_pro = mysqli_query($con, $get_pro);
+        while($row_pro = mysqli_fetch_array($run_pro)){
 
-                $pro_id = $row_pro['product_id'];
-                $pro_title = $row_pro['product_title'];
-                $pro_price = $row_pro['product_price'];
-                $pro_image = $row_pro['product_image'];
-                $pro_desc  = $row_pro['product_desc'];
-                echo "
-                    <div id='single_product'>
-                        <h3>$pro_title</h3>
-                        <img src='admin_area/product_images/$pro_image' width='180' height='180' />
-                        <p><b>Price: $ $pro_price</b></p>
-                        <a href='index.php' style='float:left;'>Go Back</a>
-                        
-                        <a href='index.php><button style='float:right'>Add to Cart</button></a>
-                    </div>
-                    <div id='single_product_desc'>
-                    <p>$pro_desc</p>
-                    </div>
-                    ";
-                }
+            $pro_id = $row_pro['product_id'];
+            $pro_title = $row_pro['product_title'];
+            $pro_price = $row_pro['product_price'];
+            $pro_image = $row_pro['product_image'];
+            $pro_desc  = $row_pro['product_desc'];
+            echo "
+                <div id='single_product'>
+                    <h3>$pro_title</h3>
+                    <img src='admin_area/product_images/$pro_image' width='180' height='180' />
+                    <p><b>Price: $ $pro_price</b></p>
+                    <a href='index.php' style='float:left;'>Go Back</a>
+                    
+                    <a href='index.php><button style='float:right'>Add to Cart</button></a>
+                </div>
+                <div id='single_product_desc'>
+                <p>$pro_desc</p>
+                </div>
+                ";
+            }
         }
-    }
 }
 //==================================Display=Product=Using=Categories==============================================
 function getCatPro($page){
