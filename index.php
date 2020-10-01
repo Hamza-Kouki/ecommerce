@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Online Shop</title>
+<!-- including CSS file -->
     <link rel="stylesheet" href="styles/style.css?v=1.3" media="all" />
+<!-- including javaScript file -->
     <script src="functions/functions.js"></script>
 </head>
 <body>
@@ -36,7 +38,7 @@
                         </form>
                 </div>
             </div>
-         <!-- menubar /-->
+         <!--end menubar /-->
          <!-- content_wrapper -->
             <div class="content_wrapper">
                 <div id="sidebar">
@@ -64,12 +66,12 @@
                     </div>
                 </div>
             </div>
-        <!-- content_wrapper /-->
+        <!--end content_wrapper /-->
         <!-- footer -->
         <footer>
         <h2>&copy; By &rarr; MOUHEBCOMPANY<h2>
         </footer>
-        <!-- footer /-->
+        <!--end footer /-->
          <!-- Main /-->
 </body>
 
